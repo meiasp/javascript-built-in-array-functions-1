@@ -6,11 +6,13 @@ const todos = [
   { topic: "Clean the room", completed: true },
 ];
 
-function getCompletedTodo(todos) {
-  // Start coding here
-}
+/* function getCompletedTodo(todos) {
+  return todos.filter((result) => result.completed === true)
+} */
 
-getCompletedTodo(todos);
+const getCompletedTodo = (todos) => todos.filter((result) => result.completed)
+
+console.log(getCompletedTodo(todos));
 
 /* 
 	Output:
